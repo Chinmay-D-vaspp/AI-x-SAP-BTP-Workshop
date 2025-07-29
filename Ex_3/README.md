@@ -96,3 +96,15 @@ Now Let us add one by one
     After selecting it, you will get another node output option to select. Please select the
 
     ##### **Parsed response body.**
+
+    Now you will see the screen like this, please save it.
+
+    Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details.
+
+    **Code Snippet:**
+
+    `return { result: inputs.input1.id };`
+
+    As we’re trying to read the Id from response, this id is nothing but UUID type, which is unique key, so set the output type as UUID in right side Options panel.
+
+    Please Select Value type --> Object and add new property result and add its type as  UUID and click + icon.
