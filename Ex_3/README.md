@@ -21,7 +21,7 @@
     *   **Entity path within the api**: `/document/jobs`
     *   Select the checkbox for **Retrieve Only**
     *   Click on **Add**
-    need to add pic here
+    ![](./Exercise%203.img/image_ex3_2.jpg)
 
 10.  Click on **Run Test** and you should get status 200.
     ![](./Exercise%203.img/ex3.img07.jpg)
