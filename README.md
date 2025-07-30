@@ -1,6 +1,6 @@
 # SAP Build Apps Workshop
 
-Welcome to the SAP Build Apps workshop. This workshop is designed to guide you through the process of building a complete application using SAP Build Apps, from setting up the UI to creating and triggering workflows.
+Welcome to the SAP Build Apps workshop. This workshop is designed to guide you through the process of building a complete application using SAP Build Apps, from setting up the UI to creating and triggering workflows. 
 
 ## Exercises
 
