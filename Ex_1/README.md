@@ -54,11 +54,11 @@ This overview serves as a starting point for developers and business users to es
     Description   - An Application to Fastrack Invoice Approvals.
     ```
 
-    ![Step 8](Excersise%201.img/ex1.img08.png)
+    ![Step 8](Excersise%201.img/ex1.img08.jpg)
 
 11. On the Summary page, click **Create**
 
-    ![Step 9](Excersise%201.img/ex1.img09.png)
+    ![Step 9](Excersise%201.img/ex1.img09.jpg)
 
 12. Your SAP Build Apps project is created, and the default Home page is displayed. Once created, projects can be accessed again at any time from the SAP Build lobby.
 
