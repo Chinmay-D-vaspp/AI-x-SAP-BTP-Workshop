@@ -147,7 +147,7 @@ Now you will see the screen like this, please save it.
 
 Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details
 
-![](./Exercise%204.img/ex4.img28.png)
+![](./Exercise%204.img/ex4_1.png)
 
 ##### **Code Snippet:**
 
@@ -157,11 +157,10 @@ As we’re trying to read the Id from response, this id is nothing but UUID type
 
 Please Select Value type --> Object and add new property result and add its type as  UUID and click + icon.
 
-![](./Exercise%204.img/ex4.img29.png)
+![](./Exercise%204.img/ex4_2.png)
 
-![](./Exercise%204.img/ex4.img30.png)
+![](./Exercise%204.img/ex4_3.png)
 
-![](./Exercise%204.img/ex4.img31.png)
 
 ##### **Creation of variable**
 
@@ -175,7 +174,12 @@ Click on **ADD App Variable**
 
 Please select the option **From Scratch**
 
-![](./Exercise%204.img/ex4.img34.png)
+![](./Exercise%204.img/ex4_4.png)
+
+Use the code: outputs["Function"].result
+To Set the app variable
+
+![](./Exercise%204.img/ex4_5.png)
 
 We need to give variable name, Value type from drop down
 
