@@ -71,7 +71,6 @@ Step3: Create a Form for Finance Approval
 
    3. Add Process Inputs (will bind the context values to this inputs)
 
-![](./Exercise%205.img/ex5.img09.jpg)
 
 ![](./Exercise%205.img/ex5.img10.jpg)
 
