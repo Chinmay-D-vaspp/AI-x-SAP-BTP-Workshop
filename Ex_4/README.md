@@ -332,6 +332,10 @@ Now lets hide the busy indicator, First select the Hide spinner from Logic Canva
 
 To make each component have some basic info why we’re using it , after selecting each component you can go to properties Panel and in advanced you can mention in Name. what ever I mention in Name will appear on Component just like above screenshot.
 
+Now Click on the Review Invoice Details button and add the Navigation Logic to it to Open up the Invoice Overview page
+
+![](./Exercise%204.img/ex4_8.jpeg)
+
 **Now lets go to next screen Invoice Processing:**
 
 ![](./Exercise%204.img/ex4.img70.png)
