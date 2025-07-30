@@ -246,40 +246,6 @@ In properties tab , select variable **“processingInvoiceButton”** and assign
 
 Now lets get the file content and store main details like Vendor, Invoice Number, Invoice Date, Total Amount in variables
 
-##### **Before that lets do one small step in Integration.**
-
-**Go to Integration and select the destination we added -->docX_destination**
-
-![](./Exercise%204.img/ex4.img46.png)
-
-Click on + more data entities, you will see the below screen and in the left pane select ”+”  
-
-![](./Exercise%204.img/ex4.img47.png)
-
-Now fill in the details in the pop up: Give Service name as GET and select only retrieve
-
-![](./Exercise%204.img/ex4.img48.png)
-
-Now you will see the capabilities for this service, as we selected retrieve only retrieve is enabled for now.  
-![](./Exercise%204.img/ex4.img49.png)
-
-Now we need to fill the Config details: In Relative path we need to give the path so Click on
-
-“ABC” option and **select the formula**
-
-![](./Exercise%204.img/ex4.img50.png)
-
-![](./Exercise%204.img/ex4.img51.png)
-Now we need to give the relative path + uniquely generated id which comes as response from DocX service when we “Post” Invoice file.
-
-ADD the below snippet and save: **"/document/jobs/" + query.identifier.id**
-
-![](./Exercise%204.img/ex4.img52.png)
-
-Now inside identifiers id we must enter id and when we click the **“Run test”** we can see the response from DocX service.
-
-![](./Exercise%204.img/ex4.img53.png)
-
 Now In logic canvas, select the **Get record**
 
 ![](./Exercise%204.img/ex4.img54.png)
