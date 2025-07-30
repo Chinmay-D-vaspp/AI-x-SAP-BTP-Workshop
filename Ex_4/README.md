@@ -21,9 +21,12 @@ The guide covers:
 This overview enables users to understand how to build apps where the UI is not static but is deeply integrated with business logic and backend systems, forming the core of intelligent and responsive enterprise applications.
 
 Step 1: Click on Browse Files Button to add custom logic.  
+
 ![](./Exercise%204.img/ex4.img01.png)
 
 Step2: To Add logic please click on Logic editor with name “Button 3”
+
+![](./Exercise%204.img/ex4.img02.jpg)
 
 The above are the components I added for browsing File.
 
@@ -31,33 +34,43 @@ Now Let us add one by one
 
 1. In Logic Canvas (left side-bottom), go to Installed tab and select **“Pick Files**” and drop it in Logic editor.
 
-![](./Exercise%204.img/ex4.img02.jpg)
+![](./Exercise%204.img/ex4.img03.jpg)
 
 2. Now we need to connect the node, select the end of first component and drag it and drop it at second component start node.
 
-3. Next drag **HTTP destination** from installed Logic canvas and connect the pick files node to it
-
-4. Click on Component **HTTP destination request** and on the left side you can view the Properties Panel.
-
-![](./Exercise%204.img/ex4.img03.jpg)
-
-##### **Now we need to fill the details in it**
-
-1. Destination: On click of destination drop down you see the list already available which we added via integrations. Select the **DocX_destination** which we created in SAP BTP Cockpit destination and add in integration in SAP Build Apps.
-
 ![](./Exercise%204.img/ex4.img04.png)
 
-2. HTTP Method: Select the method **“POST”** from drop down as we upload the invoice to DocX Service.
-
-3. Request Body Type: select type **“multipart/form-data”**
-
-4. Request Body: Click on Custom List a window opens.
+3. Next drag **HTTP destination** from installed Logic canvas and connect the pick files node to it
 
 ![](./Exercise%204.img/ex4.img05.png)
 
-Click on Add Value:
+4. Click on Component **HTTP destination request** and on the left side you can view the Properties Panel.
 
 ![](./Exercise%204.img/ex4.img06.jpg)
+
+##### **Now we need to fill the details in it**
+
+![](./Exercise%204.img/ex4.img07.jpg)
+
+1. Destination: On click of destination drop down you see the list already available which we added via integrations. Select the **DocX_destination** which we created in SAP BTP Cockpit destination and add in integration in SAP Build Apps.
+
+![](./Exercise%204.img/ex4.img08.jpg)
+
+2. HTTP Method: Select the method **“POST”** from drop down as we upload the invoice to DocX Service.
+
+![](./Exercise%204.img/ex4.img09.jpg)
+
+3. Request Body Type: select type **“multipart/form-data”**
+
+![](./Exercise%204.img/ex4.img10.jpg)
+
+4. Request Body: Click on Custom List a window opens.
+
+![](./Exercise%204.img/ex4.img11.jpg)
+
+Click on Add Value:
+
+![](./Exercise%204.img/ex4.img12.png)
 
 Please add below values:
 
@@ -67,8 +80,11 @@ Please add below values:
 
 **Value**: MERGE(\[outputs\["Browse Files Custom Logic"\].files\[0\], {"mimeType": outputs\["Browse Files Custom Logic"\].files\[0\].mimeType}\])
 
-First Click on Value --> Select Formula --> Paste given Value  
-![](./Exercise%204.img/ex4.img07.jpg)
+![](./Exercise%204.img/ex4.img13.png)
+
+First Click on Value --> Select Formula --> Paste given Value 
+
+![](./Exercise%204.img/ex4.img14.png)
 
 ##### **Second Value:**
 
@@ -78,48 +94,60 @@ First Click on Value --> Select Formula --> Paste given Value
 
 ENCODE_JSON({"schemaId":"cf8cc8a9-1eee-42d9-9a3e-507a61baac23","schemaVersion":"1","clientId":"default","documentType":"invoice","enrichment":{}})
 
+![](./Exercise%204.img/ex4.img15.png)
+
 In Optional Inputs, give the **relative path --> /document/jobs**
+
+![](./Exercise%204.img/ex4.img16.png)
 
 5. In Core, select **show spinner** and connect it to the previous component:
 
 Note: Since we’re posting file content, in background we’re fetching the file content and saving it in some variables we’re adding the busy indicator
 
+![](./Exercise%204.img/ex4.img17.png)
+
 Add delay 1 min and connect to previous component (The reason why we need to add delay is , when we upload the file , the DocX service tries to get the content of it and during this time the status of file is ”Pending” even though it is posted , so if we immediately look for file content we will not get the full content so this delay helps to get full file content as response)  
-![](./Exercise%204.img/ex4.img08.jpg)
+
+![](./Exercise%204.img/ex4.img18.png)
 
 Now click on **delay Component** and add Properties for it
 
-![](./Exercise%204.img/ex4.img09.png)
+![](./Exercise%204.img/ex4.img19.png)
 
 Now from Logic Canvas, select the **JavaScript component**. Drag it and drop it to the logic editor and connect it to the previous component.
 
+![](./Exercise%204.img/ex4.img20.png)
+
+![](./Exercise%204.img/ex4.img21.png)
+
 **Double click on JS component,** Now this dialog will open, and we must write the script task in it
 
-![](./Exercise%204.img/ex4.img10.jpg)
+![](./Exercise%204.img/ex4.img22.png)
 
 First let's fill the input: Click on **“ABC” box**
 
+![](./Exercise%204.img/ex4.img23.png)
+
 Select the output value of another node
 
-![](./Exercise%204.img/ex4.img11.png)
+![](./Exercise%204.img/ex4.img24.png)
 
-Select the **POST file to DocX Service**  
-![](./Exercise%204.img/ex4.img12.png)
+Select the **POST file to DocX Service** 
+
+![](./Exercise%204.img/ex4.img25.png)
 
 After selecting it, you will get another node output option to select. Please select the
-
 ##### **Parsed response body.**
 
-![](./Exercise%204.img/ex4.img13.png)
+![](./Exercise%204.img/ex4.img26.png)
 
 Now you will see the screen like this, please save it.  
-![](./Exercise%204.img/ex4.img14.jpg)
+
+![](./Exercise%204.img/ex4.img27.png)
 
 Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details
 
-##### 
-
-##### 
+![](./Exercise%204.img/ex4.img28.png)
 
 ##### **Code Snippet:**
 
@@ -129,22 +157,29 @@ As we’re trying to read the Id from response, this id is nothing but UUID type
 
 Please Select Value type --> Object and add new property result and add its type as  UUID and click + icon.
 
-![](./Exercise%204.img/ex4.img15.png)
+![](./Exercise%204.img/ex4.img29.png)
 
-![](./Exercise%204.img/ex4.img16.jpg)  
-![](./Exercise%204.img/ex4.img17.png)
+![](./Exercise%204.img/ex4.img30.png)
+
+![](./Exercise%204.img/ex4.img31.png)
 
 ##### **Creation of variable**
 
 Now lets create few app variables: We need to create the below app variables, and I will explain why we need it in coming steps
 
+![](./Exercise%204.img/ex4.img32.png)
+
 Click on **ADD App Variable**
 
-![](./Exercise%204.img/ex4.img18.png)
+![](./Exercise%204.img/ex4.img33.png)
+
+Please select the option **From Scratch**
+
+![](./Exercise%204.img/ex4.img34.png)
 
 We need to give variable name, Value type from drop down
 
-![](./Exercise%204.img/ex4.img19.png)
+![](./Exercise%204.img/ex4.img35.png)
 
 Below are the Variable names and Value Types that need to be provided.
 
@@ -159,31 +194,39 @@ Below are the Variable names and Value Types that need to be provided.
 
 Now from Canvas choose **set app Variable**, drag it and drop it. Connect it to JS component.
 
-##### 
+![](./Exercise%204.img/ex4.img36.png)
 
-![](./Exercise%204.img/ex4.img20.jpg)
+![](./Exercise%204.img/ex4.img00.png)
 
 Lets add properties to the variable  
-![](./Exercise%204.img/ex4.img21.jpg)
+
+![](./Exercise%204.img/ex4.img37.png)
 
 In properties Panel, by default in variable name it will show the first variable in the list, but you can click on list and choose which variable you want to set now
 
+![](./Exercise%204.img/ex4.img38.png)
+
 On click of list you can see one dialog open like this  
-![](./Exercise%204.img/ex4.img22.png)
+
+![](./Exercise%204.img/ex4.img39.png)
 
 Select **ID** from the list
 
-![](./Exercise%204.img/ex4.img23.png)
+![](./Exercise%204.img/ex4.img40.png)
 
 Save it  
-![](./Exercise%204.img/ex4.img24.png)
+
+![](./Exercise%204.img/ex4.img41.png)
 
 Let's assign actual ID value to this variable, please select the **”ABC” box** in assigned value.
 
-![](./Exercise%204.img/ex4.img25.png)
+![](./Exercise%204.img/ex4.img42.png)
 
 Select the formula  
-![](./Exercise%204.img/ex4.img26.jpg) the paste this code in Formula space 
+
+![](./Exercise%204.img/ex4.img43.jpg) 
+
+then paste this code in Formula space 
 
 **outputs\["Write JS to read the reonse from file post service"\].result**
 
@@ -193,11 +236,13 @@ As we posted the invoice to DocX , now we can show the Proceed Invoice button wh
 
 Select the **“Set App variable”** component, drag it and drop it in logic editor. Connect it to the previous component.
 
+![](./Exercise%204.img/ex4.img44.png)
+
 In properties tab , select variable **“processingInvoiceButton”** and assigned value to
 
 ##### **“True”**
 
-![](./Exercise%204.img/ex4.img27.jpg)
+![](./Exercise%204.img/ex4.img45.jpg)
 
 Now lets get the file content and store main details like Vendor, Invoice Number, Invoice Date, Total Amount in variables
 
@@ -205,55 +250,69 @@ Now lets get the file content and store main details like Vendor, Invoice Number
 
 **Go to Integration and select the destination we added -->docX_destination**
 
-Click on + more data entities, you will see the below screen and in the left pane select ”+”  
-![](./Exercise%204.img/ex4.img28.png)
+![](./Exercise%204.img/ex4.img46.png)
 
-Now fill in the details in the pop up: Give Service name as GET and select only retrieve ![](./Exercise%204.img/ex4.img29.png)
+Click on + more data entities, you will see the below screen and in the left pane select ”+”  
+
+![](./Exercise%204.img/ex4.img47.png)
+
+Now fill in the details in the pop up: Give Service name as GET and select only retrieve
+
+![](./Exercise%204.img/ex4.img48.png)
 
 Now you will see the capabilities for this service, as we selected retrieve only retrieve is enabled for now.  
-![](./Exercise%204.img/ex4.img30.png)
+![](./Exercise%204.img/ex4.img49.png)
 
 Now we need to fill the Config details: In Relative path we need to give the path so Click on
 
 “ABC” option and **select the formula**
 
-![](./Exercise%204.img/ex4.img31.png)
+![](./Exercise%204.img/ex4.img50.png)
 
+![](./Exercise%204.img/ex4.img51.png)
 Now we need to give the relative path + uniquely generated id which comes as response from DocX service when we “Post” Invoice file.
 
 ADD the below snippet and save: **"/document/jobs/" + query.identifier.id**
 
-![](./Exercise%204.img/ex4.img32.png)
+![](./Exercise%204.img/ex4.img52.png)
 
 Now inside identifiers id we must enter id and when we click the **“Run test”** we can see the response from DocX service.
 
+![](./Exercise%204.img/ex4.img53.png)
+
 Now In logic canvas, select the **Get record**
 
-![](./Exercise%204.img/ex4.img33.png)
+![](./Exercise%204.img/ex4.img54.png)
 
 Connect it to the previous node and go to Properties of this component
 
+![](./Exercise%204.img/ex4.img55.png)
+
 Now lets select the Resource as **“GET”** which we created in integration Tab and select the app variable id from list **(appVars.id)**  
-![](./Exercise%204.img/ex4.img34.png)
+![](./Exercise%204.img/ex4.img56.png)
 
 Click on “ABC” option and **select the formula and** paste this formula **appVars.id** and save it
+
+![](./Exercise%204.img/ex4.img57.png)
 
 ##### **Now let's write JavaScript to read the response and store the invoice details in app variables.**
 
 Under advanced there is a java script
 
 Firstly, select the “ABC” option in input1 and select the Formula  
-![](./Exercise%204.img/ex4.img35.png)
+![](./Exercise%204.img/ex4.img58.png)
 
-![](./Exercise%204.img/ex4.img36.png)  
-![](./Exercise%204.img/ex4.img37.jpg)
+![](./Exercise%204.img/ex4.img59.png)  
+
+![](./Exercise%204.img/ex4.img60.jpg)
 
 Paste the code: outputs\["Get file data from DocX service"\].record.extraction.headerFields 
 
  Save it
 
 Note: Here my previous component to get record I renamed it to “Get file data from DocX service “ in Advanced properties, if you didn’t rename it then will be displayed in suggestion list by default name “Get Record”  
-![](./Exercise%204.img/ex4.img38.jpg)
+
+![](./Exercise%204.img/ex4.img61.jpg)
 
 Add the below code snippet to JS:
 
@@ -279,21 +338,50 @@ return {
 invoiceNumberText: String(invoiceNumber), documentDateText: String(invoiceDate), vendorNameText: String(vendorName), grossAmountText: String(totalDue)  
 };
 
+![](./Exercise%204.img/ex4.img62.png)
+
 We need to make sure we add Output object new properties and value type “Text” in Output (right side).Every time you add one property select Add new property.
 
-![](./Exercise%204.img/ex4.img39.jpg)
+![](./Exercise%204.img/ex4.img63.jpg)
 
 Now lets drag and drop set app variables and connect to previous node. Since we need 4 values – Vendor, Invoice Number, Invoice Date, Total due. Lets add 4 set app variables and connect each one with the previous node.  
-![](./Exercise%204.img/ex4.img40.png)
+
+![](./Exercise%204.img/ex4.img64.png)
 
 In first set app variable, select variable invoice Number and for assigned value value click on ”ABC” box and then select output value from another node
 
-![](./Exercise%204.img/ex4.img41.jpg)
+![](./Exercise%204.img/ex4.img65.jpg)
+
+![](./Exercise%204.img/ex4.img66.png)
 
 Select the JS function which returns the invoice Number and then it shows the drop down of values returning from that JS function in which we need to select the invoice Number and save it. Do the same for Vendor, Invoice date and total amount.  
-![](./Exercise%204.img/ex4.img42.png)
+
+![](./Exercise%204.img/ex4.img67.png)
+
+![](./Exercise%204.img/ex4.img68.png)
 
 Now lets hide the busy indicator, First select the Hide spinner from Logic Canvas.Drag and drop it to Logic editor and connect to previous node.  
-![](./Exercise%204.img/ex4.img43.png)
 
-To make each component have some basic info why we’re using it , after selecting each component you can go to properties Panel and in advanced you can mention in Name. what ever I mention in Name will appear on Component just like above screenshot
+![](./Exercise%204.img/ex4.img69.png)
+
+To make each component have some basic info why we’re using it , after selecting each component you can go to properties Panel and in advanced you can mention in Name. what ever I mention in Name will appear on Component just like above screenshot.
+
+**Now lets go to next screen Invoice Processing:**
+
+![](./Exercise%204.img/ex4.img70.png)
+
+Let’s select each field and in properties lets bind the app variable we defined for it (in screen 1 we saved value in this variables). Under Properties click on Value **ABC** icon. A fragment is  poped up select **Data and variables** followed by **App Variable** and finally select the value required for binding. One example is shown below. Similarly for other inputs also we can bind. 
+
+![](./Exercise%204.img/ex4.img71.png)
+
+![](./Exercise%204.img/ex4.img72.png)
+
+![](./Exercise%204.img/ex4.img73.png)
+
+![](./Exercise%204.img/ex4.img74.png)
+
+![](./Exercise%204.img/ex4.img75.png)
+
+![](./Exercise%204.img/ex4.img76.png)
+
+Let us create process workflow and email trigger then we will integrate the logic for submit button. 
