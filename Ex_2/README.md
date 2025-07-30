@@ -21,14 +21,13 @@ The guide covers:
 This overview helps users understand how to transform business requirements into intuitive user interfaces, laying the foundation for a smooth and user-friendly application experience.
 
 1. The New Project will be Created, and it will navigate to **SAP Build** 
-
    
 
    ![](./Exercise-2-img/ex2.img01.png)
 
 2. These are the **Essentials** for **Creating the UI Screens.**
 
-      		![](./Exercise-2-img/ex2.img02.png)
+   ![](./Exercise-2-img/ex2.img02.png)
 
 # **Upload Invoice Page**
 
@@ -51,11 +50,10 @@ click on Title in Canvas and go to Properties \-> Add the desired title content
 
    layout option \-> Text Align \-> Centre
 
-   
 
-                     ![](./Exercise-2-img/ex2.img05.png)
+   ![](./Exercise-2-img/ex2.img05.png)
 
-               Drag and drop Container Essential.
+   Drag and drop Container Essential.
 
 7. To change the style of the **Container**, click on dragged and dropped container essential and Select **Primary Card**
 
@@ -114,7 +112,7 @@ click on Title in Canvas and go to Properties \-> Add the desired title content
 
 12. To **add label to the Button**, we should **add it in properties**.
 
-             ![](./Exercise-2-img/ex2.img16.png)
+    ![](./Exercise-2-img/ex2.img16.png)
 
 13. To **change the Button style**, click on **Style Option**.
 
@@ -122,18 +120,19 @@ click on Title in Canvas and go to Properties \-> Add the desired title content
 
 14. ##### To **change the Button layout**, like **top and botton gaps**, **width** , **aligning position**
 
-           ![](./Exercise-2-img/ex2.img18.png)
+    ![](./Exercise-2-img/ex2.img18.png)
 
 16\. To **add label to the Button**, click on **Properties Option**.
 
-            ![](./Exercise-2-img/ex2.img19.png)
+   ![](./Exercise-2-img/ex2.img19.png)
 
 20. To **change style of the Button ,** click on **Style Option.**
 
-             ![](./Exercise-2-img/ex2.img20.png)
-21. To **change the Button Layout**, click on **layout option for height , width , aligning, position of the button**
+    ![](./Exercise-2-img/ex2.img20.png)
+    
+22. To **change the Button Layout**, click on **layout option for height , width , aligning, position of the button**
 
-             ![](./Exercise-2-img/ex2.img21.png)
+    ![](./Exercise-2-img/ex2.img21.png)
 
 # **Invoice Processing Page**
 
@@ -141,37 +140,37 @@ click on Title in Canvas and go to Properties \-> Add the desired title content
 
 22. To **add label to the Button**, click on **Properties Option**.
 
-             ![](./Exercise-2-img/ex2.img22.png)
+    ![](./Exercise-2-img/ex2.img22.png)
 
 23. To **change the Button style**, click on **Style Option**.
 
-             ![](./Exercise-2-img/ex2.img23.png)
+    ![](./Exercise-2-img/ex2.img23.png)
 
 24. To **change the Button Layout**, click on **Layout Option**.
 
-             ![](./Exercise-2-img/ex2.img24.png)
+    ![](./Exercise-2-img/ex2.img24.png)
 
 25. To **add label to the Button**, click on **Properties Option**.
 
-             ![](./Exercise-2-img/ex2.img25.png)
+    ![](./Exercise-2-img/ex2.img25.png)
 
 26. To **change the Button style**, click on **Style Option**.
 
-             ![](./Exercise-2-img/ex2.img26.png)
+    ![](./Exercise-2-img/ex2.img26.png)
 
 27. To **change the Button Layout**, click on **Layout Option**.
 
-             ![](./Exercise-2-img/ex2.img27.png)
+    ![](./Exercise-2-img/ex2.img27.png)
 
 **Drag and Drop Input Essential**
 
 28. To **add label** to the **Input Field inside the Container**, click on **Properties Option**.
 
-             ![](./Exercise-2-img/ex2.img28.png)
+    ![](./Exercise-2-img/ex2.img28.png)
 
 29. To **change the Input Field style**, click on **Style Option**.
 
-            ![](./Exercise-2-img/ex2.img29.png)
+    ![](./Exercise-2-img/ex2.img29.png)
 
 **Drag and Drop Input Essential**
 
@@ -180,18 +179,12 @@ click on Title in Canvas and go to Properties \-> Add the desired title content
 ![](./Exercise-2-img/ex2.img30.png)
 31. To **add label** to the **Button**, click on **Properties Option**
 
-           ![](./Exercise-2-img/ex2.img31.png)
+   ![](./Exercise-2-img/ex2.img31.png)
 
 32. To **change** the **Button style**, Click on **Style Option**
 
-            ![](./Exercise-2-img/ex2.img32.png)
+    ![](./Exercise-2-img/ex2.img32.png)
 
 33. To **change** the **Button Layout**, Click on **Layout Option**
 
-            ![](./Exercise-2-img/ex2.img33.png)
-
-# **UI Integration**
-
-## Overview
-
-This section provides an overview of **UI integration in SAP Build Apps**, focusing on how to connect and align the app’s user interface with backend systems, services, and business logic to deliver a fully functional, interactive application.
+    ![](./Exercise-2-img/ex2.img33.png)
