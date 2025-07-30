@@ -24,12 +24,13 @@
     ![](./Exercise%203.img/ex3.img06.jpg)
 
 10.  Click on **Run Test** and you should get status 200.
+    ![](./Exercise%203.img/ex3.img07.jpg)
 
-11.  In Logic Canvas (left side-bottom), go to Installed tab and select **“Pick Files”** and drop it in Logic editor.
+12.  In Logic Canvas (left side-bottom), go to Installed tab and select **“Pick Files”** and drop it in Logic editor.
 
-12.  Next drag **HTTP destination** from installed Logic canvas and connect the pick files node to it.
+13.  Next drag **HTTP destination** from installed Logic canvas and connect the pick files node to it.
 
-13. Click on Component **HTTP destination request** and on the left side you can view the Properties Panel. Now we need to fill the details in it:
+14. Click on Component **HTTP destination request** and on the left side you can view the Properties Panel. Now we need to fill the details in it:
     *   **Destination**: Select the DocX_destination which we created in SAP BTP Cockpit destination.
     *   **HTTP Method**: Select the method “POST”.
     *   **Request Body Type**: select type “multipart/form-data”.
@@ -42,26 +43,25 @@
             *   **Key**: `Options`
             *   **Value**: `ENCODE_JSON({"schemaId":"cf8cc8a9-1eee-42d9-9a3e-507a61baac23","schemaVersion":"1","clientId":"default","documentType":"invoice","enrichment":{}})`
     *   In **Optional Inputs**, give the relative path: `/document/jobs`
-    ![](./Exercise%203.img/ex3.img07.jpg)
 
-14. In Core, select **show spinner** and connect it to the previous component.
+15. In Core, select **show spinner** and connect it to the previous component.
     *Note: Since we’re posting file content, in background we’re fetching the file content and saving it in some variables we’re adding the busy indicator.*
 
-15. Add **delay 1 min** and connect to previous component.
+16. Add **delay 1 min** and connect to previous component.
     *(The reason why we need to add delay is, when we upload the file, the DocX service tries to get the content of it and during this time the status of file is ”Pending” even though it is posted, so if we immediately look for file content we will not get the full content so this delay helps to get full file content as response)*
 
-16. Now from Logic Canvas, select the **JavaScript** component. Drag it and drop it to the logic editor and connect it to the previous component.
+17. Now from Logic Canvas, select the **JavaScript** component. Drag it and drop it to the logic editor and connect it to the previous component.
     ![](./Exercise%203.img/ex3.img08.jpg)
 
-17. Double click on JS component. First let's fill the input: Click on “ABC” box and select the output value of another node.
+18. Double click on JS component. First let's fill the input: Click on “ABC” box and select the output value of another node.
     ![](./Exercise%203.img/ex3.img09.jpg)
 
-18. Select the **POST file to DocX Service**. After selecting it, you will get another node output option to select. Please select the **Parsed response body**.
+19. Select the **POST file to DocX Service**. After selecting it, you will get another node output option to select. Please select the **Parsed response body**.
     ![](./Exercise%203.img/ex3.img10.png)
 
-19. Now you will see the screen like this, please save it.
+20. Now you will see the screen like this, please save it.
 
-20. Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details.
+21. Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details.
     *   **Code Snippet**:
         `return { result: inputs.input1.id };`
     *   As we’re trying to read the Id from response, this id is nothing but UUID type, which is unique key, so set the output type as UUID in right side Options panel.
