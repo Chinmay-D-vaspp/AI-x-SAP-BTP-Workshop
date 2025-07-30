@@ -26,6 +26,7 @@ Step1: Create a Process Workflow Project
 
 ![](./Exercise%205.img/ex5.img01.png)
 
+
 ![](./Exercise%205.img/ex5.img02.jpg)
 
 Step2: Select the Project Created and Select the Create button
