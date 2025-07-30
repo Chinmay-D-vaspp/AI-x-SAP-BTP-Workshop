@@ -16,12 +16,12 @@
      ![](./Exercise%203.img/ex3.img05.jpg)
     
 9.  The Dialog is popped up. Fill the details as below:
-    *   **Name**: post
+    *   **Name**: GET
     *   Select the checkbox for **Autogenerate Configuration**
     *   **Entity path within the api**: `/document/jobs`
-    *   Select the checkbox for **Enable all**
+    *   Select the checkbox for **Retrieve Only**
     *   Click on **Add**
-    ![](./Exercise%203.img/ex3.img06.jpg)
+    need to add pic here
 
 10.  Click on **Run Test** and you should get status 200.
     ![](./Exercise%203.img/ex3.img07.jpg)
