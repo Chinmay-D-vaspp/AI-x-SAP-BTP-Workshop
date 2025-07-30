@@ -24,6 +24,10 @@ This overview helps users understand how to convert manual, repetitive workflows
 
 Step1: Create a Process Workflow Project
 
+![](./Exercise%205.img/ex5.img01.png)
+
+![](./Exercise%205.img/ex5.img02.jpg)
+
 Step2: Select the Project Created and Select the Create button
 
 Step3: Create a Form for Finance Approval
@@ -40,11 +44,17 @@ Step3: Create a Form for Finance Approval
 
    4. Click **Save**.
 
-![](./Exercise%205.img/ex5.img01.png)
-
-![](./Exercise%205.img/ex5.img02.jpg)
-
 ![](./Exercise%205.img/ex5.img03.jpg)
+
+![](./Exercise%205.img/ex5.img04.jpg)
+
+![](./Exercise%205.img/ex5.img05.png)
+
+![](./Exercise%205.img/ex5.img06.png)
+
+![](./Exercise%205.img/ex5.img07.png)
+
+![](./Exercise%205.img/ex5.img08.jpg)
 
 ## Step4: Add a Process Artifact
 
@@ -60,13 +70,21 @@ Step3: Create a Form for Finance Approval
 
    3. Add Process Inputs (will bind the context values to this inputs)
 
-![](./Exercise%205.img/ex5.img04.jpg)
+![](./Exercise%205.img/ex5.img09.jpg)
 
-![](./Exercise%205.img/ex5.img05.png)
+![](./Exercise%205.img/ex5.img10.jpg)
 
-![](./Exercise%205.img/ex5.img06.png)
+![](./Exercise%205.img/ex5.img11.jpg)
 
-![](./Exercise%205.img/ex5.img07.png)
+![](./Exercise%205.img/ex5.img12.jpg)
+
+![](./Exercise%205.img/ex5.img13.png)
+
+![](./Exercise%205.img/ex5.img14.jpg)
+
+![](./Exercise%205.img/ex5.img15.jpg)  
+
+![](./Exercise%205.img/ex5.img16.jpg)
 
 ## Step5: Add New Step Approval Form
 
@@ -82,11 +100,19 @@ Step3: Create a Form for Finance Approval
 
    3. Go to Inputs section and bind the context values (double click on Input and select the context value which you want to bind)
 
-![](./Exercise%205.img/ex5.img08.jpg)
+![](./Exercise%205.img/ex5.img17.jpg)  
 
-![](./Exercise%205.img/ex5.img09.jpg)
+![](./Exercise%205.img/ex5.img18.jpg)
 
-![](./Exercise%205.img/ex5.img10.jpg)
+![](./Exercise%205.img/ex5.img19.jpg)
+
+![](./Exercise%205.img/ex5.img20.jpg)
+
+![](./Exercise%205.img/ex5.img21.jpg)
+
+![](./Exercise%205.img/ex5.img22.jpg)
+
+![](./Exercise%205.img/ex5.img23.jpg)
 
 ## Step6: Add Email Notification Step
 
@@ -101,13 +127,17 @@ Step3: Create a Form for Finance Approval
 
    3. Open mail body editor and give mail template (you can style the mail body just with styling options available and can bind values from workflow context)
 
-   4. ![](./Exercise%205.img/ex5.img11.jpg)
+   4. Repeat the same for Rejection mail Step too.
 
-   Repeat the same for Rejection mail Step too.
+![](./Exercise%205.img/ex5.img24.png)
 
-![](./Exercise%205.img/ex5.img12.jpg)
+![](./Exercise%205.img/ex5.img25.png)
 
-![](./Exercise%205.img/ex5.img13.png)
+![](./Exercise%205.img/ex5.img26.jpg)
+
+![](./Exercise%205.img/ex5.img27.png)
+
+![](./Exercise%205.img/ex5.img28.png)
 
 ## Step7: Save the Work
 
@@ -117,10 +147,11 @@ Step3: Create a Form for Finance Approval
 
 3. Deploy the Project to Shared Environment
 
-![](./Exercise%205.img/ex5.img14.jpg)
+![](./Exercise%205.img/ex5.img29.png)
 
-![](./Exercise%205.img/ex5.img15.jpg)  
-![](./Exercise%205.img/ex5.img16.jpg)
+![](./Exercise%205.img/ex5.img30.png)
+
+![](./Exercise%205.img/ex5.img31.jpg)
 
 ## Step8: Publish the project to SAP Build Apps library
 
@@ -134,54 +165,6 @@ Step3: Create a Form for Finance Approval
 
 5. Select publish to Library
 
-![](./Exercise%205.img/ex5.img17.jpg)  
-![](./Exercise%205.img/ex5.img18.jpg)
+![](./Exercise%205.img/ex5.img32.jpg)
 
-### Additional Images
-
-The following images are not yet referenced in the exercise steps. They are placed here for future integration.
-
-*   **Image 19:**
-    ![](./Exercise%205.img/ex5.img19.jpg)
-
-*   **Image 20:**
-    ![](./Exercise%205.img/ex5.img20.jpg)
-
-*   **Image 21:**
-    ![](./Exercise%205.img/ex5.img21.jpg)
-
-*   **Image 22:**
-    ![](./Exercise%205.img/ex5.img22.jpg)
-
-*   **Image 23:**
-    ![](./Exercise%205.img/ex5.img23.jpg)
-
-*   **Image 24:**
-    ![](./Exercise%205.img/ex5.img24.png)
-
-*   **Image 25:**
-    ![](./Exercise%205.img/ex5.img25.png)
-
-*   **Image 26:**
-    ![](./Exercise%205.img/ex5.img26.jpg)
-
-*   **Image 27:**
-    ![](./Exercise%205.img/ex5.img27.png)
-
-*   **Image 28:**
-    ![](./Exercise%205.img/ex5.img28.png)
-
-*   **Image 29:**
-    ![](./Exercise%205.img/ex5.img29.png)
-
-*   **Image 30:**
-    ![](./Exercise%205.img/ex5.img30.png)
-
-*   **Image 31:**
-    ![](./Exercise%205.img/ex5.img31.jpg)
-
-*   **Image 32:**
-    ![](./Exercise%205.img/ex5.img32.jpg)
-
-*   **Image 33:**
-    ![](./Exercise%205.img/ex5.img33.jpg)
+![](./Exercise%205.img/ex5.img33.jpg)
