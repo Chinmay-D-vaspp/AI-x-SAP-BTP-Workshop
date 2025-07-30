@@ -32,6 +32,8 @@ This overview helps users understand how to connect the user interface with SAP'
 
 ![](./Exercise%206.img/ex6.img02.png)
 
+![](./Exercise%206.img/ex6.img03.png)
+
 #### Step2: Trigger the Workflow
 
 1. Go to Screen 2 and click the button (Button to Process Invoice for Approval)
@@ -59,19 +61,33 @@ This overview helps users understand how to connect the user interface with SAP'
 
    5. Give the relative path in optional inputs (since in destination we already added till API end point we need to give remaining relative path here)
 
-![](./Exercise%206.img/ex6.img03.png)
-
 ![](./Exercise%206.img/ex6.img04.png)
 
 ![](./Exercise%206.img/ex6.img05.jpg)
 
 ![](./Exercise%206.img/ex6.img06.png)
 
+![](./Exercise%206.img/ex6.img07.png)
+
+![](./Exercise%206.img/ex6.img08.png)
+
+![](./Exercise%206.img/ex6.img09.png)
+
+![](./Exercise%206.img/ex6.img10.jpg)
+
+![](./Exercise%206.img/ex6.img11.jpg)
+
+![](./Exercise%206.img/ex6.img12.jpg)
+
+![](./Exercise%206.img/ex6.img13.png)
+
 Step3: Add Message Toast
 
 1. Add Message Toast
 
 2. Give Toast Message
+
+![](./Exercise%206.img/ex6.img14.png)
 
 #### Step4: Add Navigate to Home Page
 
@@ -81,33 +97,4 @@ Step3: Add Message Toast
 
 3. Save the work
 
-### Additional Images
-
-The following images are not yet referenced in the exercise steps. They are placed here for future integration.
-
-*   **Image 7:**
-    ![](./Exercise%206.img/ex6.img07.png)
-
-*   **Image 8:**
-    ![](./Exercise%206.img/ex6.img08.png)
-
-*   **Image 9:**
-    ![](./Exercise%206.img/ex6.img09.png)
-
-*   **Image 10:**
-    ![](./Exercise%206.img/ex6.img10.jpg)
-
-*   **Image 11:**
-    ![](./Exercise%206.img/ex6.img11.jpg)
-
-*   **Image 12:**
-    ![](./Exercise%206.img/ex6.img12.jpg)
-
-*   **Image 13:**
-    ![](./Exercise%206.img/ex6.img13.png)
-
-*   **Image 14:**
-    ![](./Exercise%206.img/ex6.img14.png)
-
-*   **Image 15:**
-    ![](./Exercise%206.img/ex6.img15.png)
+![](./Exercise%206.img/ex6.img15.png)
