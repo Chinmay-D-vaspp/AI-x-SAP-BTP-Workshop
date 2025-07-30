@@ -272,7 +272,7 @@ Firstly, select the “ABC” option in input1 and select the Formula
 
 ![](./Exercise%204.img/ex4.img60.jpg)
 
-Paste the code: outputs\["Get file data from DocX service"\].record.extraction.headerFields 
+Paste the code: outputs["Get record"].record.extraction.headerFields 
 
  Save it
 
