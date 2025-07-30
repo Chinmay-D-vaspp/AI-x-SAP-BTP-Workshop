@@ -78,7 +78,7 @@ Please add below values:
 
 **Key:** file
 
-**Value**: MERGE(\[outputs\["Browse Files Custom Logic"\].files\[0\], {"mimeType": outputs\["Browse Files Custom Logic"\].files\[0\].mimeType}\])
+**Value**: MERGE([outputs["Pick files"].files[0], {"mimeType": outputs["Pick files"].files[0].mimeType}])
 
 ![](./Exercise%204.img/ex4.img13.png)
 
@@ -88,7 +88,7 @@ First Click on Value --> Select Formula --> Paste given Value
 
 ##### **Second Value:**
 
-**Key**: Options
+**Key**: options
 
 **Value:** 
 
