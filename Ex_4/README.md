@@ -337,11 +337,13 @@ Now Click on the Review Invoice Details button and add the Navigation Logic to i
 
 ![](./Exercise%204.img/ex4_8.jpeg)
 
-
-
 **Now lets go to next screen Invoice Processing:**
 
 ![](./Exercise%204.img/ex4.img70.jpg)
+
+First lets set the Back button to navigate us back to the Upload Invoice page
+
+![](./Exercise%204.img/ex4_11.png)
 
 Let’s select each field and in properties lets bind the app variable we defined for it (in screen 1 we saved value in this variables). Under Properties click on Value **ABC** icon. A fragment is  poped up select **Data and variables** followed by **App Variable** and finally select the value required for binding. One example is shown below. Similarly for other inputs also we can bind. 
 
