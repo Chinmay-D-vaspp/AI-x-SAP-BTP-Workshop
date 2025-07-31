@@ -280,8 +280,7 @@ Paste the code: **outputs["Get record"].record.extraction.headerFields**
 ![](./Exercise%204.img/ex4_10.png)
 
 Add the below code snippet to JS:
-'''js
-
+==
 const headerFields = inputs.input1; const getValue = (name) => {
 
 const match = headerFields.find(field => field.name === name); return match ? match.value : "";  
@@ -303,7 +302,7 @@ return {
 
 invoiceNumberText: String(invoiceNumber), documentDateText: String(invoiceDate), vendorNameText: String(vendorName), grossAmountText: String(totalDue)  
 };
-'''
+==
 
 ![](./Exercise%204.img/ex4.img62.jpg)
 
