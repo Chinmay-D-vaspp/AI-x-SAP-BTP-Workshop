@@ -176,12 +176,6 @@ Please select the option **From Scratch**
 
 ![](./Exercise%204.img/ex4_4.png)
 
-Use the code: **outputs["Function"].result**
-
-To Set the app variable
-
-![](./Exercise%204.img/ex4_5.png)
-
 We need to give variable name, Value type from drop down
 
 ![](./Exercise%204.img/ex4.img35.png)
@@ -233,7 +227,11 @@ Select the formula
 
 then paste this code in Formula space 
 
-**outputs\["Write JS to read the reonse from file post service"\].result**
+Use the code: **outputs["Function"].result**
+
+To Set the app variable
+
+![](./Exercise%204.img/ex4_5.png)
 
 Click on Save, from the POST service response we’re able to save the ID into variable which we use later to fetch the invoice details.
 
