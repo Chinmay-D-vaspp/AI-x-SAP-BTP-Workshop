@@ -245,7 +245,7 @@ In properties tab , select variable **“processingInvoiceButton”** and assign
 
 ##### **“True”**
 
-![](./Exercise%204.img/ex4.img45.png)
+![](./Exercise%204.img/ex4_6.png)
 
 Now lets get the file content and store main details like Vendor, Invoice Number, Invoice Date, Total Amount in variables
 
@@ -279,7 +279,6 @@ Paste the code: outputs["Get record"].record.extraction.headerFields
 
  Save it
 
- ![](./Exercise%204.img/ex4_6.png)
 
 Note: Here my previous component to get record I renamed it to “Get file data from DocX service “ in Advanced properties, if you didn’t rename it then will be displayed in suggestion list by default name “Get Record”  
 
