@@ -325,11 +325,11 @@ Select the JS function which returns the invoice Number and then it shows the dr
 
 ![](./Exercise%204.img/ex4.img67.png)
 
-![](./Exercise%204.img/ex4.img68.png)
+![](./Exercise%204.img/ex4.img68.jpg)
 
 Now lets hide the busy indicator, First select the Hide spinner from Logic Canvas.Drag and drop it to Logic editor and connect to previous node.  
 
-![](./Exercise%204.img/ex4.img69.png)
+![](./Exercise%204.img/ex4.img69.jpg)
 
 To make each component have some basic info why we’re using it , after selecting each component you can go to properties Panel and in advanced you can mention in Name. what ever I mention in Name will appear on Component just like above screenshot.
 
@@ -339,7 +339,7 @@ Now Click on the Review Invoice Details button and add the Navigation Logic to i
 
 **Now lets go to next screen Invoice Processing:**
 
-![](./Exercise%204.img/ex4.img70.png)
+![](./Exercise%204.img/ex4.img70.jpg)
 
 Let’s select each field and in properties lets bind the app variable we defined for it (in screen 1 we saved value in this variables). Under Properties click on Value **ABC** icon. A fragment is  poped up select **Data and variables** followed by **App Variable** and finally select the value required for binding. One example is shown below. Similarly for other inputs also we can bind. 
 
