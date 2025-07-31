@@ -245,7 +245,7 @@ In properties tab , select variable **“processingInvoiceButton”** and assign
 
 ##### **“True”**
 
-![](./Exercise%204.img/ex4.img45.jpg)
+![](./Exercise%204.img/ex4.img45.png)
 
 Now lets get the file content and store main details like Vendor, Invoice Number, Invoice Date, Total Amount in variables
 
