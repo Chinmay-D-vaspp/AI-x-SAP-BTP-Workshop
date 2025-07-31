@@ -153,7 +153,7 @@ Please Select Value type --> Object
 
 ![](./Exercise%204.img/ex4_1.png)
 
-Add new property result and add its type as  UUID and click + icon.
+Add new property result and add its type and click + icon.
 
 So we’re trying to read the Id from response, this id is nothing but UUID type, which is unique key, so we have set the output type as UUID in right side Options panel
 
