@@ -122,11 +122,9 @@ Now from Logic Canvas, select the **JavaScript component**. Drag it and drop it 
 
 **Double click on JS component,** Now this dialog will open, and we must write the script task in it
 
-![](./Exercise%204.img/ex4.img22.png)
-
 First let's fill the input: Click on **“ABC” box**
 
-![](./Exercise%204.img/ex4.img23.png)
+![](./Exercise%204.img/ex4_9.png)
 
 Select the output value of another node
 
