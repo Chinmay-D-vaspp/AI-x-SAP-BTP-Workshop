@@ -337,6 +337,8 @@ Now Click on the Review Invoice Details button and add the Navigation Logic to i
 
 ![](./Exercise%204.img/ex4_8.jpeg)
 
+
+
 **Now lets go to next screen Invoice Processing:**
 
 ![](./Exercise%204.img/ex4.img70.jpg)
