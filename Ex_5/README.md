@@ -28,7 +28,9 @@ Step1: Create a Process Workflow Project
 
 The configurations for the Process Workflow project are as shown below
 
+![](./Exercise%205.img/ex5_1.png)
 
+![](./Exercise%205.img/ex5_2.png)
 
 
 ![](./Exercise%205.img/ex5.img02.jpg)
