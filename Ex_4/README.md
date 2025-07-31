@@ -132,7 +132,7 @@ Select the output value of another node
 
 Select the **POST file to DocX Service** 
 
-![](./Exercise%204.img/ex4.img25.png)
+![](./Exercise%204.img/ex4_8.png)
 
 After selecting it, you will get another node output option to select. Please select the
 ##### **Parsed response body.**
@@ -145,15 +145,18 @@ Now you will see the screen like this, please save it.
 
 Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details
 
-![](./Exercise%204.img/ex4_1.png)
-
 ##### **Code Snippet:**
 
 **return { result: inputs.input1.id };**
 
-As we’re trying to read the Id from response, this id is nothing but UUID type, which is unique key, so set the output type as UUID in right side Options panel
+Please Select Value type --> Object
 
-Please Select Value type --> Object and add new property result and add its type as  UUID and click + icon.
+![](./Exercise%204.img/ex4_1.png)
+
+Add new property result and add its type as  UUID and click + icon.
+
+So we’re trying to read the Id from response, this id is nothing but UUID type, which is unique key, so we have set the output type as UUID in right side Options panel
+
 
 ![](./Exercise%204.img/ex4_2.png)
 
@@ -174,7 +177,8 @@ Please select the option **From Scratch**
 
 ![](./Exercise%204.img/ex4_4.png)
 
-Use the code: outputs["Function"].result
+Use the code: **outputs["Function"].result**
+
 To Set the app variable
 
 ![](./Exercise%204.img/ex4_5.png)
