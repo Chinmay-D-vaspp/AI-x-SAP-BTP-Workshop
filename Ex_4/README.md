@@ -277,10 +277,7 @@ Paste the code: outputs["Get record"].record.extraction.headerFields
 
  Save it
 
-
-Note: Here my previous component to get record I renamed it to “Get file data from DocX service “ in Advanced properties, if you didn’t rename it then will be displayed in suggestion list by default name “Get Record”  
-
-![](./Exercise%204.img/ex4_7.png)
+![](./Exercise%204.img/ex4_10.png)
 
 Add the below code snippet to JS:
 
