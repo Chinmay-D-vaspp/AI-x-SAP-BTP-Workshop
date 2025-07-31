@@ -84,7 +84,7 @@ Please add below values:
 
 First Click on Value --> Select Formula --> Paste given Value 
 
-![](./Exercise%204.img/ex4.img14.png)
+![](./Exercise%204.img/ex4.img14.jpg)
 
 ##### **Second Value:**
 
@@ -94,17 +94,17 @@ First Click on Value --> Select Formula --> Paste given Value
 
 ENCODE_JSON({"schemaId":"cf8cc8a9-1eee-42d9-9a3e-507a61baac23","schemaVersion":"1","clientId":"default","documentType":"invoice","enrichment":{}})
 
-![](./Exercise%204.img/ex4.img15.png)
+![](./Exercise%204.img/ex4.img15.jpg)
 
 In Optional Inputs, give the **relative path --> /document/jobs**
 
-![](./Exercise%204.img/ex4.img16.png)
+![](./Exercise%204.img/ex4.img16.jpg)
 
 5. In Core, select **show spinner** and connect it to the previous component:
 
 Note: Since we’re posting file content, in background we’re fetching the file content and saving it in some variables we’re adding the busy indicator
 
-![](./Exercise%204.img/ex4.img17.png)
+![](./Exercise%204.img/ex4.img17.jpg)
 
 Add delay 1 min and connect to previous component (The reason why we need to add delay is , when we upload the file , the DocX service tries to get the content of it and during this time the status of file is ”Pending” even though it is posted , so if we immediately look for file content we will not get the full content so this delay helps to get full file content as response)  
 
