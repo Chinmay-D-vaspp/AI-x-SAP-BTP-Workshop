@@ -239,7 +239,7 @@ As we posted the invoice to DocX , now we can show the Proceed Invoice button wh
 
 Select the **“Set App variable”** component, drag it and drop it in logic editor. Connect it to the previous component.
 
-![](./Exercise%204.img/ex4.img44.png)
+![](./Exercise%204.img/ex4.img44.jpg)
 
 In properties tab , select variable **“processingInvoiceButton”** and assigned value to
 
