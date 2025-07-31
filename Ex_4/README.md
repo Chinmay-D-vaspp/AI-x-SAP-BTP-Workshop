@@ -258,22 +258,22 @@ Connect it to the previous node and go to Properties of this component
 ![](./Exercise%204.img/ex4.img55.png)
 
 Now lets select the Resource as **“GET”** which we created in integration Tab and select the app variable id from list **(appVars.id)**  
-![](./Exercise%204.img/ex4.img56.png)
+![](./Exercise%204.img/ex4.img56.jpg)
 
 Click on “ABC” option and **select the formula and** paste this formula **appVars.id** and save it
 
-![](./Exercise%204.img/ex4.img57.png)
+![](./Exercise%204.img/ex4.img57.jpg)
 
 ##### **Now let's write JavaScript to read the response and store the invoice details in app variables.**
 
 Under advanced there is a java script
 
 Firstly, select the “ABC” option in input1 and select the Formula  
-![](./Exercise%204.img/ex4.img58.png)
+![](./Exercise%204.img/ex4.img58.jpg)
 
-![](./Exercise%204.img/ex4.img59.png)  
+![](./Exercise%204.img/ex4.img59.jpg)  
 
-![](./Exercise%204.img/ex4.img60.jpg)
+![](./Exercise%204.img/ex4.img60.png)
 
 Paste the code: outputs["Get record"].record.extraction.headerFields 
 
@@ -308,7 +308,7 @@ return {
 invoiceNumberText: String(invoiceNumber), documentDateText: String(invoiceDate), vendorNameText: String(vendorName), grossAmountText: String(totalDue)  
 };
 
-![](./Exercise%204.img/ex4.img62.png)
+![](./Exercise%204.img/ex4.img62.jpg)
 
 We need to make sure we add Output object new properties and value type “Text” in Output (right side).Every time you add one property select Add new property.
 
@@ -316,13 +316,13 @@ We need to make sure we add Output object new properties and value type “Text�
 
 Now lets drag and drop set app variables and connect to previous node. Since we need 4 values – Vendor, Invoice Number, Invoice Date, Total due. Lets add 4 set app variables and connect each one with the previous node.  
 
-![](./Exercise%204.img/ex4.img64.png)
+![](./Exercise%204.img/ex4.img64.jpg)
 
 In first set app variable, select variable invoice Number and for assigned value value click on ”ABC” box and then select output value from another node
 
 ![](./Exercise%204.img/ex4.img65.jpg)
 
-![](./Exercise%204.img/ex4.img66.png)
+![](./Exercise%204.img/ex4.img66.jpg)
 
 Select the JS function which returns the invoice Number and then it shows the drop down of values returning from that JS function in which we need to select the invoice Number and save it. Do the same for Vendor, Invoice date and total amount.  
 
