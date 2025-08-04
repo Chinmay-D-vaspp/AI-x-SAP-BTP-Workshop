@@ -116,9 +116,9 @@ Now click on **delay Component** and add Properties for it
 
 Now from Logic Canvas, select the **JavaScript component**. Drag it and drop it to the logic editor and connect it to the previous component.
 
-![](./Exercise%204.img/ex4.img20.png)
+![](./Exercise%204.img/ex4.img20.jpg)
 
-![](./Exercise%204.img/ex4.img21.png)
+![](./Exercise%204.img/ex4.img21.jpg)
 
 **Double click on JS component,** Now this dialog will open, and we must write the script task in it
 
@@ -141,7 +141,7 @@ After selecting it, you will get another node output option to select. Please se
 
 Now you will see the screen like this, please save it.  
 
-![](./Exercise%204.img/ex4.img27.png)
+![](./Exercise%204.img/ex4.img27.jpg)
 
 Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details
 
@@ -166,11 +166,11 @@ So we’re trying to read the Id from response, this id is nothing but UUID type
 
 Now lets create few app variables: We need to create the below app variables, and I will explain why we need it in coming steps
 
-![](./Exercise%204.img/ex4.img32.png)
+![](./Exercise%204.img/ex4.img32.jpg)
 
 Click on **ADD App Variable**
 
-![](./Exercise%204.img/ex4.img33.png)
+![](./Exercise%204.img/ex4.img33.jpg)
 
 Please select the option **From Scratch**
 
@@ -199,15 +199,15 @@ Now from Canvas choose **set app Variable**, drag it and drop it. Connect it to 
 
 Lets add properties to the variable  
 
-![](./Exercise%204.img/ex4.img37.png)
+![](./Exercise%204.img/ex4.img37.jpg)
 
 In properties Panel, by default in variable name it will show the first variable in the list, but you can click on list and choose which variable you want to set now
 
-![](./Exercise%204.img/ex4.img38.png)
+![](./Exercise%204.img/ex4.img38.jpg)
 
 On click of list you can see one dialog open like this  
 
-![](./Exercise%204.img/ex4.img39.png)
+![](./Exercise%204.img/ex4.img39.jpg)
 
 Select **ID** from the list
 
@@ -215,7 +215,7 @@ Select **ID** from the list
 
 Save it  
 
-![](./Exercise%204.img/ex4.img41.png)
+![](./Exercise%204.img/ex4.img41.jpg)
 
 Let's assign actual ID value to this variable, please select the **”ABC” box** in assigned value.
 
@@ -223,7 +223,7 @@ Let's assign actual ID value to this variable, please select the **”ABC” box
 
 Select the formula  
 
-![](./Exercise%204.img/ex4.img43.jpg) 
+![](./Exercise%204.img/ex4.img43.png) 
 
 then paste this code in Formula space 
 
