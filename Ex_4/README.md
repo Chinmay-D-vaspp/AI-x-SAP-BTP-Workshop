@@ -114,6 +114,23 @@ In Optional Inputs, give the **relative path -->**
 
 ![](./Exercise%204.img/ex4.img16.jpg)
 
+We have posted an Invoice to Document AI, now lets test how AI extracts the fields just from Document. The Http elemnt has 3 output pins the first is for success, second for Failure and third for error. So now let us drag and drop the Toast element, and connect first outout of http to input of toast message.
+
+![](./Exercise%204.img/image(3).png)
+
+Click on Toast element, towards right side there is properties ther click on ABC icon -> Click on output value of another node 
+
+![](./Exercise%204.img/image(4).png)
+
+Click on HTTP Destinaion Request
+
+![](./Exercise%204.img/image(5).png)
+
+Click on Response success status message
+
+![](./Exercise%204.img/image(2).png)
+
+Once we get Success message we can safely remove toast message and add **Show Spinner** as below.
 
 5. In Core, select **show spinner** and connect it to the previous component:
 
