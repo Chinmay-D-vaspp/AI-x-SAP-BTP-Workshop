@@ -114,6 +114,7 @@ In Optional Inputs, give the **relative path -->**
 
 ![](./Exercise%204.img/ex4.img16.jpg)
 
+
 5. In Core, select **show spinner** and connect it to the previous component:
 
 Note: Since we’re posting file content, in background we’re fetching the file content and saving it in some variables we’re adding the busy indicator
@@ -266,6 +267,21 @@ In properties tab , select variable **“processingInvoiceButton”** and assign
 ##### **“True”**
 
 ![](./Exercise%204.img/ex4_6.png)
+
+Go to Integrations we will add the Data entity to Docx destination
+
+Click on Add Rest API Data Entity, to post the data from Build Apps to Documentation AI.
+     ![](./Exercise%203.img/ex3.img05.jpg)
+    
+The Dialog is popped up. Fill the details as below:
+    *   **Name**: GET
+    *   Select the checkbox for **Autogenerate Configuration**
+    *   **Entity path within the api**: `/document/jobs`
+    *   Select the checkbox for **Retrieve Only**
+    *   Click on **Add**
+    ![](./Exercise%203.img/image_ex3_2.png)
+
+Go to list and click on **Run Test** and you should get status 200.
 
 Now lets get the file content and store main details like Vendor, Invoice Number, Invoice Date, Total Amount in variables
 
