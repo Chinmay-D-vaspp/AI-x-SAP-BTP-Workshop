@@ -375,31 +375,31 @@ We are going to now going to create the capture image functionality.
 
 First copy the Browse files button
 
-![](./Exercise%204.img/capture1.png)
+![](./Exercise%204.img/Capture1.png)
 
 Rename the copied entity as Capture Image, the logic of the browse files buttons will also be copied now we have to modify it slightly to have the capture image functionality.
 
-![](./Exercise%204.img/capture2.png)
+![](./Exercise%204.img/Capture2.png)
 
 Now delete the Pick file logic from the Capture Image button Logic.
 
-![](./Exercise%204.img/capture3.png)
+![](./Exercise%204.img/Capture3.png)
 
 Replace that with Core-> Device -> Take Photo button.
 
-![](./Exercise%204.img/capture4.png)
+![](./Exercise%204.img/Capture4.png)
 
 Connect the Take Photo button with Event component and the HTTP Request part similar to how Pick file is configured.
 
-![](./Exercise%204.img/capture5.png)
+![](./Exercise%204.img/Capture5.png)
 
 Add the appropriate configurations as done in Browse Files button.
 
-![](./Exercise%204.img/capture6.png)
+![](./Exercise%204.img/Capture6.png)
 
 For HTTP Request configure it for Formula
 
-![](./Exercise%204.img/capture7.png)
+![](./Exercise%204.img/Capture7.png)
 
 Now we have finished setting up the Capture Image button and the subsequent functionality.
 
