@@ -371,7 +371,7 @@ Now lets hide the busy indicator, First select the Hide spinner from Logic Canva
 
 ![](./Exercise%204.img/ex4.img69.jpg)
 
-We are going to now going to create the capture image functionality.
+We are now going to create the capture image functionality.
 
 First copy the Browse files button
 
@@ -385,7 +385,7 @@ Now delete the Pick file logic from the Capture Image button Logic.
 
 ![](./Exercise%204.img/Capture3.png)
 
-Replace that with Core-> Device -> Take Photo button.
+Replace that with Core -> Device -> Take Photo button.
 
 ![](./Exercise%204.img/Capture4.png)
 
