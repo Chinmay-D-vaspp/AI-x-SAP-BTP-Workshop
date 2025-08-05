@@ -393,7 +393,31 @@ Connect the Take Photo button with Event component and the HTTP Request part sim
 
 ![](./Exercise%204.img/Capture5.png)
 
-Add the appropriate configurations as done in Browse Files button.
+Please add below values:
+
+##### **First Value**:
+
+**Key:** file
+
+**Value**: 
+
+Code Snippet 7
+
+```javascript 
+MERGE([outputs["Take photo"].photoFile,{"mimeType":"image/jpeg"}])
+```
+
+##### **Second Value:**
+
+**Key**: options
+
+**Value:** 
+
+Code Snippet 8
+
+```javascript
+ENCODE_JSON({"schemaId":"cf8cc8a9-1eee-42d9-9a3e-507a61baac23","schemaVersion":"1","clientId":"default","documentType":"invoice","enrichment":{}})
+```
 
 ![](./Exercise%204.img/Capture6.png)
 
