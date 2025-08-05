@@ -355,6 +355,38 @@ Now lets hide the busy indicator, First select the Hide spinner from Logic Canva
 
 ![](./Exercise%204.img/ex4.img69.jpg)
 
+We are going to now going to create the capture image functionality.
+
+First copy the Browse files button
+
+![](./Exercise%204.img/capture1.png)
+
+Rename the copied entity as Capture Image, the logic of the browse files buttons will also be copied now we have to modify it slightly to have the capture image functionality.
+
+![](./Exercise%204.img/capture2.png)
+
+Now delete the Pick file logic from the Capture Image button Logic.
+
+![](./Exercise%204.img/capture3.png)
+
+Replace that with Core-> Device -> Take Photo button.
+
+![](./Exercise%204.img/capture4.png)
+
+Connect the Take Photo button with Event component and the HTTP Request part similar to how Pick file is configured.
+
+![](./Exercise%204.img/capture5.png)
+
+Add the appropriate configurations as done in Browse Files button.
+
+![](./Exercise%204.img/capture6.png)
+
+For HTTP Request configure it for Formula
+
+![](./Exercise%204.img/capture7.png)
+
+Now we have finished setting up the Capture Image button and the subsequent functionality.
+
 To make each component have some basic info why we’re using it , after selecting each component you can go to properties Panel and in advanced you can mention in Name. what ever I mention in Name will appear on Component just like above screenshot.
 
 Now Click on the Review Invoice Details button and add the Navigation Logic to it to Open up the Invoice Overview page
