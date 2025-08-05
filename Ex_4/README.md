@@ -78,7 +78,13 @@ Please add below values:
 
 **Key:** file
 
-**Value**: ```MERGE([outputs["Pick files"].files[0], {"mimeType": outputs["Pick files"].files[0].mimeType}])```
+**Value**: 
+
+Code Snippet 1
+
+```javascript 
+MERGE([outputs["Pick files"].files[0], {"mimeType": outputs["Pick files"].files[0].mimeType}])
+```
 
 ![](./Exercise%204.img/ex4.img13.png)
 
@@ -92,7 +98,11 @@ First Click on Value --> Select Formula --> Paste given Value
 
 **Value:** 
 
-```ENCODE_JSON({"schemaId":"cf8cc8a9-1eee-42d9-9a3e-507a61baac23","schemaVersion":"1","clientId":"default","documentType":"invoice","enrichment":{}})```
+Code Snippet 2
+
+```javascript
+ENCODE_JSON({"schemaId":"cf8cc8a9-1eee-42d9-9a3e-507a61baac23","schemaVersion":"1","clientId":"default","documentType":"invoice","enrichment":{}})
+```
 
 ![](./Exercise%204.img/ex4.img15.jpg)
 
@@ -145,9 +155,11 @@ Now you will see the screen like this, please save it.
 
 Add the snippet below, which helps to save the unique ID generated for our invoice which got uploaded to DocX service. Through this ID only we will be able to fetch the invoice details
 
-##### **Code Snippet 1:**
+##### **Code Snippet 3:**
 
-```return { result: inputs.input1.id };```
+```javascript
+return { result: inputs.input1.id };
+```
 
 Please Select Value type --> Object
 
@@ -227,7 +239,11 @@ Select the formula
 
 then paste this code in Formula space 
 
-Use the code snippet 2: ```outputs["Function"].result```
+Use the code snippet 4: 
+
+```javascript
+outputs["Function"].result
+```
 
 To Set the app variable
 
@@ -273,13 +289,17 @@ Firstly, select the “ABC” option in input1 and select the Formula
 
 ![](./Exercise%204.img/ex4.img59.jpg)  
 
-Paste the code snippet 3: ```outputs["Get record"].record.extraction.headerFields```
+Paste the code snippet 5: 
+
+```javascript
+outputs["Get record"].record.extraction.headerFields
+```
 
  Save it
 
 ![](./Exercise%204.img/ex4_10.png)
 
-Add the below code snippet 4 to JS:
+Add the below code snippet 6 to JS:
 
 ```javascript
 const headerFields = inputs.input1; const getValue = (name) => {
