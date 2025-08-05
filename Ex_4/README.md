@@ -106,7 +106,11 @@ ENCODE_JSON({"schemaId":"cf8cc8a9-1eee-42d9-9a3e-507a61baac23","schemaVersion":"
 
 ![](./Exercise%204.img/ex4.img15.jpg)
 
-In Optional Inputs, give the **relative path --> /document/jobs**
+In Optional Inputs, give the **relative path -->** 
+
+```javascript
+/document/jobs
+```
 
 ![](./Exercise%204.img/ex4.img16.jpg)
 
