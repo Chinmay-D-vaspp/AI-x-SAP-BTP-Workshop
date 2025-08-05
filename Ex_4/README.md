@@ -271,7 +271,8 @@ In properties tab , select variable **“processingInvoiceButton”** and assign
 Go to Integrations we will add the Data entity to Docx destination
 
 Click on Add Rest API Data Entity, to post the data from Build Apps to Documentation AI.
-     ![](./Exercise%203.img/ex3.img05.jpg)
+
+![](./Exercise%204.img/ex3.img05.jpg)
     
 The Dialog is popped up. Fill the details as below:
     *   **Name**: GET
@@ -279,7 +280,8 @@ The Dialog is popped up. Fill the details as below:
     *   **Entity path within the api**: `/document/jobs`
     *   Select the checkbox for **Retrieve Only**
     *   Click on **Add**
-    ![](./Exercise%203.img/image_ex3_2.png)
+    
+![](./Exercise%204.img/image_ex3_2.png)
 
 Go to list and click on **Run Test** and you should get status 200.
 
