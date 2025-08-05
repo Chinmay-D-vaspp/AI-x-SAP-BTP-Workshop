@@ -283,7 +283,18 @@ The Dialog is popped up. Fill the details as below:
     
 ![](./Exercise%204.img/image_ex3_2.png)
 
-Go to list and click on **Run Test** and you should get status 200.
+Go to list and click on **Run Test** and you should get status:OK 200.
+
+![](./Exercise%204.img/ex3.img07.jpg)
+
+We just tested by uploading a document, now we have to fetch this document , hence we will copy the ID once status is displayed as "DONE"
+
+![](./Exercise%204.img/image(7).png)
+
+CLick on retrieve tab and paste the copied ID under identifiers -> id and then run test, you should get Status:OK 200.
+Once you get OK 200 status click on Autodetect fields from response
+
+![](./Exercise%204.img/image(6).png)
 
 Now lets get the file content and store main details like Vendor, Invoice Number, Invoice Date, Total Amount in variables
 
