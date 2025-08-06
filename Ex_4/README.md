@@ -353,25 +353,49 @@ Add the below code snippet 6 to JS:
 
 ```javascript
 const headerFields = inputs.input1; const getValue = (name) => {
+ 
+const match = headerFields.find(field => field.name === name); 
 
-const match = headerFields.find(field => field.name === name); return match ? match.value : "";  
+  return match ? match.value : "";  
+
 };
+ 
+let invoiceNumber = getValue("invoiceId"); 
 
-let invoiceNumber = getValue("invoiceId"); if(!invoiceNumber) {  
+if(!invoiceNumber) {  
+
 invoiceNumber = getValue("documentNumber");
 
 }
+ 
+const invoiceDate = getValue("documentDate"); 
 
-const invoiceDate = getValue("documentDate"); let vendorName = getValue("vendorName"); if(!vendorName) {  
-vendorName = getValue("receiverName");
+let vendorName = getValue("vendorName"); 
+
+if(!vendorName) {  
+
+vendorName = getValue("senderName");
+ 
+}
+ 
+let totalDue = getValue("grossAmount");
+
+if(!totalDue){
+
+  totalDue= getValue("netAmount");
 
 }
-
-const totalDue = getValue("grossAmount");
-
+ 
 return {
 
-invoiceNumberText: String(invoiceNumber), documentDateText: String(invoiceDate), vendorNameText: String(vendorName), grossAmountText: String(totalDue)  
+  invoiceNumberText: String(invoiceNumber), 
+
+  documentDateText: String(invoiceDate), 
+
+  vendorNameText: String(vendorName),
+
+  grossAmountText: String(totalDue)  
+
 };
 ```
 
